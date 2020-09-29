@@ -1,4 +1,4 @@
 FROM adoptopenjdk/openjdk8:latest
 VOLUME /tmp
-ADD MongoDBAtlas-Jenkins-0.0.1-SNAPSHOT.jar app.jar 
+ADD SpringCloudGateway-0.0.1-SNAPSHOT.jar app.jar 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=three","-jar","/app.jar"]
